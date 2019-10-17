@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tutorial_guide"
+        android:title="@string/tutorial_guide"
+        android:icon="@drawable/ic_description"
+        />
+    <item
+        android:id="@+id/services"
+        android:title="@string/services"
+        android:icon="@drawable/ic_services"
+        />
+    <item
+        android:id="@+id/history"
+        android:title="@string/history"
+        android:icon="@drawable/ic_history"
+        />
+    <item
+        android:id="@+id/faq"
+        android:title="@string/faq"
+        android:icon="@drawable/ic_faq"
+        />
+    <item
+        android:id="@+id/setting"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        />
+</menu>
