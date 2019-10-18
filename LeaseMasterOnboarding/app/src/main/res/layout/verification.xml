@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verification">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/closewindow"
+        />
+
+    <TextView
+        android:id="@+id/signup_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:text="Verification"
+        android:textSize="32sp"
+        android:textColor="@color/blackText"
+        android:fontFamily="@font/gilroymedium"
+        />
+
+    <TextView
+        android:id="@+id/terms_condition_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/signup_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Enter the verification code we sent to your mobile number"
+        android:textSize="15sp"
+        android:textColor="@color/blackText"
+        android:lineHeight="22dp"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <RelativeLayout
+        android:id="@+id/editText_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/terms_condition_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text_background1"
+        >
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="+233 244123456"
+            android:textSize="16sp"
+            android:fontFamily="@font/gilroysemibold"
+            android:textColor="@color/blackText"
+            android:background="@null"
+            android:inputType="phone"
+            android:letterSpacing="0.1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/email"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentEnd="true"
+            android:text="Edit"
+            android:textSize="13sp"
+            android:textColor="@color/orange"
+            android:textAlignment="viewEnd"
+            android:fontFamily="@font/gilroyregular"
+            android:letterSpacing="0.2"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/editText_number"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/blackText"
+        android:hint="Enter verification code here"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:lines="1"
+        />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Submit"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        android:background="@drawable/signup_background"
+        android:fontFamily="@font/gilroysemibold"
+        android:elevation="3dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/submitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Resend verification code"
+        android:textSize="15sp"
+        android:fontFamily="@font/gilroysemibold"
+        android:textColor="@color/orange"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

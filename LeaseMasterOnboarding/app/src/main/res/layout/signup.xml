@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/closewindow"
+        />
+
+    <TextView
+        android:id="@+id/signup_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="24dp"
+        android:text="Sign up"
+        android:textSize="32sp"
+        android:textColor="@color/blackText"
+        android:fontFamily="@font/gilroymedium"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/signup_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="42dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/gilroymedium"
+        android:hint="Email"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/gilroymedium"
+        android:hint="Full name"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:lines="1"
+
+        />
+
+    <EditText
+        android:id="@+id/creatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/gilroymedium"
+        android:hint="Create password"
+        android:background="@drawable/edit_text_background"
+        />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:layout_constraintTop_toBottomOf="@+id/creatPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Sign up"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        android:background="@drawable/signup_background"
+        android:fontFamily="@font/gilroysemibold"
+        android:elevation="1dp"
+        />
+
+    <TextView
+        android:id="@+id/terms_condition_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/next"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="By signing up, you agree to the Terms and conditions of Lease Master"
+        android:textSize="15sp"
+        android:lineHeight="22dp"
+        android:elegantTextHeight="true"
+        android:textAlignment="center"
+        android:fontFamily="@font/gilroyregular"
+        android:letterSpacing="0.1"
+        />
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/terms_condition_label"
+        android:layout_marginTop="24dp"
+        android:background="#ebebeb"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="26dp">
+
+        <TextView
+            android:id="@+id/signinLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="Do you already have an account? "
+            android:textSize="15sp"
+            android:textColor="@color/greyishBrown"
+            android:fontFamily="@font/gilroyregular"
+            android:textAlignment="center"
+            android:letterSpacing="0.1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/signinLabel"
+            android:text="Login here"
+            android:textSize="15sp"
+            android:textColor="@color/orange"
+            android:fontFamily="@font/gilroysemibold"
+            android:textAlignment="center"
+            android:letterSpacing="0.1"
+            />
+
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
