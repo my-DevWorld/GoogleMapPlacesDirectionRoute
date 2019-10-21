@@ -45,6 +45,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:textSize="16sp"
+        android:textColor="@color/blackText"
         android:fontFamily="@font/gilroymedium"
         android:hint="Email"
         android:background="@drawable/edit_text_background"
@@ -63,6 +64,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:textSize="16sp"
+        android:textColor="@color/blackText"
         android:fontFamily="@font/gilroymedium"
         android:hint="Full name"
         android:background="@drawable/edit_text_background"
@@ -83,6 +85,7 @@
         android:paddingLeft="16dp"
         android:paddingRight="16dp"
         android:textSize="16sp"
+        android:textColor="@color/blackText"
         android:fontFamily="@font/gilroymedium"
         android:hint="Create password"
         android:background="@drawable/edit_text_background"
@@ -115,7 +118,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:text="By signing up, you agree to the Terms and conditions of Lease Master"
+        tools:text="By signing up, you agree to the Terms and conditions of Lease Master"
         android:textSize="15sp"
         android:lineHeight="22dp"
         android:elegantTextHeight="true"
@@ -166,9 +169,5 @@
             android:textAlignment="center"
             android:letterSpacing="0.1"
             />
-
-
-
-
     </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

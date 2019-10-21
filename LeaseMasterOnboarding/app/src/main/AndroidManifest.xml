@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Verification"></activity>
+        <activity android:name=".CreateList"></activity>
+        <activity android:name=".SaveToList" />
+        <activity android:name=".PropertyDetails" />
+        <activity android:name=".Verification" />
         <activity android:name=".SignupWithSocialMediaActive" />
         <activity android:name=".SignupWithSocialMediaInActive" />
         <activity android:name=".Signup" />

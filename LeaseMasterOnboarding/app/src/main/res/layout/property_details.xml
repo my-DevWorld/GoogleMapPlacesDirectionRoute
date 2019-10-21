@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PropertyDetails">
+
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/closewindow"
+        />
+
+    <TextView
+        android:id="@+id/facilities_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="37dp"
+        android:layout_marginStart="31dp"
+        android:text="Facilities"
+        android:textSize="24sp"
+        android:textColor="@color/blackText"
+        android:fontFamily="@font/gilroysemibold"
+        android:letterSpacing="0.1"
+        />
+
+    <TextView
+        android:id="@+id/basic_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/facilities_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="31dp"
+        android:text="Basic"
+        android:textSize="16sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroysemibold"
+        android:letterSpacing="0.1"
+        />
+
+    <TextView
+        android:id="@+id/bathroom_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/basic_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="31dp"
+        android:text="Bathroom"
+        android:textSize="14sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <TextView
+        android:id="@+id/bathroomType_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bathroom_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="31dp"
+        android:text="Exclusive bathroom"
+        android:textSize="12sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <View
+        android:id="@+id/horizontalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/bathroomType_label"
+        android:layout_marginTop="13dp"
+        android:background="@color/brownGrey"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="26dp"
+        />
+
+    <TextView
+    android:id="@+id/kitchen_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/horizontalLine1"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginTop="26dp"
+    android:layout_marginStart="31dp"
+    android:text="Kitchen"
+    android:textSize="14sp"
+    android:textColor="@color/greyishBrown"
+    android:fontFamily="@font/gilroyregular"
+    />
+
+    <TextView
+        android:id="@+id/kitchenType_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/kitchen_label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="31dp"
+        android:text="Exclusive bathroom"
+        android:textSize="12sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <View
+        android:id="@+id/horizontalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/kitchenType_label"
+        android:layout_marginTop="13dp"
+        android:background="@color/brownGrey"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="26dp"
+        />
+
+    <TextView
+        android:id="@+id/kitchen_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="31dp"
+        android:text="Kitchen"
+        android:textSize="14sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <TextView
+        android:id="@+id/kitchenType_label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/kitchen_label2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="31dp"
+        android:text="Exclusive bathroom"
+        android:textSize="12sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <View
+        android:id="@+id/horizontalLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/kitchenType_label2"
+        android:layout_marginTop="13dp"
+        android:background="@color/brownGrey"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="26dp"
+        />
+
+    <TextView
+        android:id="@+id/kitchen_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="31dp"
+        android:text="Kitchen"
+        android:textSize="14sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <TextView
+        android:id="@+id/kitchenType_label3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/kitchen_label3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="31dp"
+        android:text="Exclusive bathroom"
+        android:textSize="12sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroyregular"
+        />
+
+    <View
+        android:id="@+id/horizontalLine4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/kitchenType_label3"
+        android:layout_marginTop="13dp"
+        android:background="@color/brownGrey"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="26dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

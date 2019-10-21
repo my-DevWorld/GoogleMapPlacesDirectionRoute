@@ -9,4 +9,7 @@
     <color name="orange">#f37421</color>
     <color name="blackText">#000000</color>
     <color name="whiteTextColor">#ffff</color>
+    <color name="brownGrey">#99979797</color>
+    <color name="midBlue">#2e5eaa</color>
+    <color name="brownishGrey">#787878</color>
 </resources>

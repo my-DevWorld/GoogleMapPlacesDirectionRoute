@@ -20,6 +20,27 @@
         />
 
     <RelativeLayout
+        android:layout_width="46dp"
+        android:layout_height="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_btn"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white_background"
+        android:gravity="center"
+        android:elevation="0.1dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="15dp"
+            android:fontFamily="@font/gilroysemibold"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/fb_btn"
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -85,57 +106,24 @@
             />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/line_txt"
+    <View
+        android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="26dp"
         app:layout_constraintTop_toBottomOf="@+id/google_btn"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
-        >
-
-            <View
-                android:id="@+id/line"
-                android:layout_width="165dp"
-                android:layout_height="26dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="15.5dp"
-                android:background="@drawable/line"
-                android:layout_centerVertical="true"
-                />
-
-            <TextView
-                android:id="@+id/txt1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/line"
-                android:text="or"
-                android:textSize="15sp"
-                android:textColor="#030303"
-                android:fontFamily="@font/gilroysemibold"
-                android:elevation="10dp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-            />
-
-        <View
-            android:layout_width="165dp"
-            android:layout_height="26dp"
-            android:layout_toRightOf="@+id/txt1"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="15.5dp"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/line"
-            android:layout_centerVertical="true"
-            />
-   </RelativeLayout>
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/line"
+        android:layout_centerVertical="true"
+        />
 
     <Button
         android:id="@+id/signUpWithMobileNumberBtn"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        app:layout_constraintTop_toBottomOf="@+id/line_txt"
+        app:layout_constraintTop_toBottomOf="@+id/line"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="20dp"
         android:layout_marginStart="24dp"
@@ -180,41 +168,7 @@
             android:letterSpacing="0.1"
             />
 
-
-
-
     </RelativeLayout>
-
-
-
-
-
-
-    <!--    <View-->
-<!--        android:id="@+id/line"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="26dp"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/google_btn"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:layout_marginStart="24dp"-->
-<!--        android:layout_marginEnd="24dp"-->
-<!--        android:background="@drawable/line"-->
-<!--        />-->
-<!--    <TextView-->
-<!--    android:layout_width="46dp"-->
-<!--    android:layout_height="26dp"-->
-<!--    app:layout_constraintTop_toBottomOf="@+id/google_btn"-->
-<!--    app:layout_constraintStart_toStartOf="parent"-->
-<!--    app:layout_constraintEnd_toEndOf="parent"-->
-<!--    android:gravity="center"-->
-<!--    android:layout_marginTop="16dp"-->
-<!--    android:text="or"-->
-<!--    android:textSize="15sp"-->
-<!--    android:textColor="#030303"-->
-<!--    android:fontFamily="@font/gilroysemibold"-->
-<!--    android:elevation="10dp"-->
-<!--        />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveToList">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/closewindow"
+        />
+
+    <TextView
+        android:id="@+id/saveToList_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="101dp"
+        android:layout_marginStart="35dp"
+        android:text="Save to list"
+        android:textSize="24sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroysemibold"
+        android:lineHeight="22dp"
+        />
+
+    <TextView
+        android:id="@+id/createNewList_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/saveToList_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="35dp"
+        android:text="Create New List"
+        android:textSize="18sp"
+        android:textColor="@color/midBlue"
+        android:fontFamily="@font/gilroysemibold"
+        android:lineHeight="22dp"
+        />
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.5dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="24dp"
+                android:text="Imperial One Bedroom Apartment at the..."
+                android:textSize="16sp"
+                android:textColor="@color/greyishBrown"
+                android:fontFamily="@font/gilroysemibold"
+                android:lineHeight="22dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="25dp"
+                android:text="Ogbojo, East Legon"
+                android:textSize="12sp"
+                android:textColor="@color/greyishBrown"
+                android:fontFamily="@font/gilroyregular"
+                android:lineHeight="22dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

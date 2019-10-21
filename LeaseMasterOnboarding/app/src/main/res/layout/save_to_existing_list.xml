@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/ic_close"
+        android:contentDescription="@string/closewindow"
+        />
+
+    <TextView
+        android:id="@+id/saveToList_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/close"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="35dp"
+        android:text="Save to list"
+        android:textSize="18sp"
+        android:textColor="@color/greyishBrown"
+        android:fontFamily="@font/gilroysemibold"
+        android:lineHeight="22dp"
+        />
+
+    <TextView
+        android:id="@+id/createNewList_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/saveToList_Label"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="35dp"
+        android:text="Create New List"
+        android:textSize="16sp"
+        android:textColor="@color/midBlue"
+        android:fontFamily="@font/gilroysemibold"
+        android:lineHeight="22dp"
+        />
+
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/createNewList_Label"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/brownGrey"
+        />
+
+    <LinearLayout
+        android:id="@+id/saveListTitle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="299.2dp"
+            android:layout_height="wrap_content"
+            android:text="New Apartment Search"
+            android:textSize="16sp"
+            android:textColor="@color/greyishBrown"
+            android:fontFamily="@font/gilroyregular"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bookmark_colored"
+            android:layout_marginStart="8.8dp"
+            android:layout_marginEnd="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/saveListTitle"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/brownGrey"
+        />
+
+    <LinearLayout
+        android:id="@+id/saveListTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_width="299.2dp"
+            android:layout_height="wrap_content"
+            android:text="New Crib"
+            android:textSize="16sp"
+            android:textColor="@color/greyishBrown"
+            android:fontFamily="@font/gilroyregular"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_bookmark"
+            android:layout_marginStart="8.8dp"
+            android:layout_marginEnd="5dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/horizontalLine3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/saveListTitle2"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/brownGrey"
+        />
+
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardElevation="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/apartment_image"
+            android:layout_width="79dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="24dp"
+            android:layout_gravity="center_vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="119dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:text="Imperial One Bedroom Apartment at the..."
+                android:textSize="16sp"
+                android:textColor="@color/greyishBrown"
+                android:fontFamily="@font/gilroysemibold"
+                android:lineHeight="22dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Ogbojo, East Legon"
+                android:textSize="12sp"
+                android:textColor="@color/greyishBrown"
+                android:fontFamily="@font/gilroyregular"
+                android:lineHeight="22dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

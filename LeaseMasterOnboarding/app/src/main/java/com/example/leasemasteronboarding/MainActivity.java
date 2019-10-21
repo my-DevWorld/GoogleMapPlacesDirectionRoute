@@ -13,6 +13,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setUp();
+    }
+
+    public void setUp(){
+
         Button next = findViewById(R.id.next);
         next.setOnClickListener(view ->{
             startActivity(new Intent(this, Signup.class));
@@ -32,6 +37,16 @@ public class MainActivity extends AppCompatActivity {
         verification.setOnClickListener(view ->{
             startActivity(new Intent(this, Verification.class));
         });
+
+        Button propertyDetails = findViewById(R.id.propertyDetails);
+        propertyDetails.setOnClickListener(view -> {
+            startActivity(new Intent(this, PropertyDetails.class));
+        });
+        Button saveToList = findViewById(R.id.saveToList);
+        saveToList.setOnClickListener(view -> {
+            startActivity(new Intent(this, SaveToList.class));
+        });
+
 
     }
 }
