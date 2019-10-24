@@ -18,19 +18,26 @@ public class MainActivity extends AppCompatActivity {
 
     public void setUp(){
 
+        //landingPage
+
+        Button landingPage = findViewById(R.id.landingPage);
+        landingPage.setOnClickListener(view ->{
+            startActivity(new Intent(this, LandingPageLogedOut.class));
+        });
+
         Button next = findViewById(R.id.next);
         next.setOnClickListener(view ->{
             startActivity(new Intent(this, Signup.class));
-        } );
+        });
 
         Button next1 = findViewById(R.id.next1);
         next1.setOnClickListener(view ->{
-            startActivity(new Intent(this, SignupWithSocialMediaInActive.class));
+            startActivity(new Intent(this, LogIn.class));
         });
 
         Button next2 = findViewById(R.id.next2);
         next2.setOnClickListener(view ->{
-            startActivity(new Intent(this, SignupWithSocialMediaActive.class));
+            startActivity(new Intent(this, SignupFbGoogle.class));
         });
 
         Button verification = findViewById(R.id.verification);

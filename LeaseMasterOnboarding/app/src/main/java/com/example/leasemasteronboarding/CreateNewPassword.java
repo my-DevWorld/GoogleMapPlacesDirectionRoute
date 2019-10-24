@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SignupWithSocialMediaInActive extends AppCompatActivity {
+public class CreateNewPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.signup_with_social_media_in_active);
+        setContentView(R.layout.create_new_password);
     }
 }

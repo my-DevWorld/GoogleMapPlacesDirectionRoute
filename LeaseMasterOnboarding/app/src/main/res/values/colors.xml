@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent">#f37421</color>
 
 
     <color name="greyishBrown">#484848</color>
@@ -12,4 +12,7 @@
     <color name="brownGrey">#99979797</color>
     <color name="midBlue">#2e5eaa</color>
     <color name="brownishGrey">#787878</color>
+    <color name="brownishGreyTwo">#767676</color>
+    <color name="veryLightPink">#ebebeb</color>
+    <color name="errorColor">#ff0000</color>
 </resources>

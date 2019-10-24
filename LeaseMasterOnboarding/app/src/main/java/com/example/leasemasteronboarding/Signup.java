@@ -24,9 +24,9 @@ public class Signup extends AppCompatActivity {
     private void setUp(){
 
         TextView terms_condition_label = findViewById(R.id.terms_condition_label);
-        String blackText1 = getColoredSpanned("By signing up, you agree to the", "#030303");
-        String orangeText = getColoredSpanned(" Terms and conditions", "#f37421");
-        String blackText2 = getColoredSpanned(" of Lease Master", "#030303");
+        String blackText1 = getColoredSpanned("By signing up, you agree to the", "#484848");
+        String orangeText = getColoredSpanned(" Terms and conditions", "#2e5eaa");
+        String blackText2 = getColoredSpanned(" of Lease Master", "#484848");
         terms_condition_label.setText(Html.fromHtml(blackText1 + orangeText + blackText2));
 
     }

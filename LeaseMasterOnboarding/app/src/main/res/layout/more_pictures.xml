@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackText"
+    tools:context=".MorePictures">
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/ic_close_white"
+        android:contentDescription="@string/closewindow"
+        />
+
+    <RelativeLayout
+        android:id="@+id/carouselView"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        app:layout_constraintTop_toTopOf="@+id/close"
+        android:layout_marginTop="37dp"
+        android:background="#fff"
+        />
+
+    <TextView
+        android:id="@+id/carouselCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="24dp"
+        android:text="5/10"
+        android:textSize="16sp"
+        android:textColor="@color/whiteTextColor"
+        android:fontFamily="@font/gilroymedium"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/carouselView"
+        app:layout_constraintStart_toEndOf="@+id/carouselCount"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="14dp"
+        android:text="Imperial One Bedroom Apartment at The Gallery"
+        android:textSize="14sp"
+        android:textColor="@color/veryLightPink"
+        android:fontFamily="@font/gilroyregular"
+        android:layout_marginHorizontal="19dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

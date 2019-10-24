@@ -58,19 +58,22 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="33dp"
-        android:background="@drawable/thin_border"
+        android:background="@drawable/edit_text_background"
+        android:gravity="center_vertical"
+
         >
         <EditText
             android:id="@+id/listName_editTxt"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Name your list"
+            android:hint="Name your list"
             android:textSize="16sp"
             android:textColor="@color/brownishGrey"
             android:fontFamily="@font/gilroyregular"
             android:lineHeight="22dp"
             android:background="@null"
+            android:focusable="auto"
             />
     </RelativeLayout>
 
